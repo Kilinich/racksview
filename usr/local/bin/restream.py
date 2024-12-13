@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 TCP_SERVER_HOST = "127.0.0.1"
 TCP_SERVER_PORT_MAIN = 8080
-TCP_SERVER_PORT_PREVIEW = 8081
+TCP_SERVER_PORT_PREVIEW = 8080
 BOUNDARY_STRING = "--ThisRandomString"
 
 @app.route('/main')
