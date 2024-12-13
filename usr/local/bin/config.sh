@@ -1,9 +1,15 @@
 #!/bin/bash
 
-width=1024
-height=768
-framerate=1/1
+width_main=1024
+height_main=768
+framerate_main=5/1
+jpegenc_quality_main=50
+port_main=8080
 
-jpegenc_quality=50
+width_preview=640
+height_preview=480
+framerate_preview=1/1
+jpegenc_quality_preview=25
+port_preview=8081
+
 host=0.0.0.0
-port=8080
