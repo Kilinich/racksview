@@ -8,7 +8,7 @@ source ./config.sh
 gst-launch-1.0 libcamerasrc ! \
 video/x-raw,width=$width_main,height=$height_main,framerate=$framerate_main ! \
 videoconvert ! \
-textoverlay text="$HOSTNAME" valignment=top halignment=left font-desc="Sans, 10" xpos=10 ypos=10 ! \
+textoverlay text="Main $HOSTNAME" valignment=top halignment=left font-desc="Sans, 10" xpos=10 ypos=10 ! \
 clockoverlay time-format="%d-%m-%Y %H:%M.%S" valignment=bottom halignment=left font-desc="Sans, 10" xpos=10 ypos=-10 ! \
 videoconvert ! jpegenc quality=$jpegenc_quality_main ! multipartmux ! queue ! \
 tcpserversink host=$host port=$port_main \
